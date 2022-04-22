@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4be35080-b466-4703-b260-71ac74245dde": {
+      "ProjectGuid": "4be35080-b466-4703-b260-71ac74245dde",
+      "DisplayName": "AcademicSystem.Dal",
+      "ColorIndex": 0
+    },
+    "52cfd646-835c-4d75-9a64-d4ee6657e212": {
+      "ProjectGuid": "52cfd646-835c-4d75-9a64-d4ee6657e212",
+      "DisplayName": "AcademicSystem.Domain",
+      "ColorIndex": 1
+    },
+    "50118716-4f8c-411c-a30a-7adcac042dcf": {
+      "ProjectGuid": "50118716-4f8c-411c-a30a-7adcac042dcf",
+      "DisplayName": "AcademicSystem.Services",
+      "ColorIndex": 2
+    },
+    "783835ba-f309-43e8-9ded-d0105ff743ba": {
+      "ProjectGuid": "783835ba-f309-43e8-9ded-d0105ff743ba",
+      "DisplayName": "AcademicSystem.Api",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
