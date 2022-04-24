@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcademicSystem.Domain.Models
+namespace AcademicSystem.Domain.Models.ProfileInfo
 {
     public class BasicInfo
     {
+        public Guid BasicInfoId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string EmailAddress { get; set; }

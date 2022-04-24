@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AcademicSystem.Domain.Models.ProfileInfo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,9 @@ namespace AcademicSystem.Domain.Models
         public Guid CourseId { get; set; }
         public string NameCourse { get; set; }
         public List<Discipline> Disciplines { get; set; }
-        public Teacher Coordinator { get; set; }
+        public List<Student> Students { get; set; }
+        public List<Teacher> Teachers { get; set; }
+        public Coordinator Coordinator { get; set; }
         public string Department { get; set; }
     }
 }
