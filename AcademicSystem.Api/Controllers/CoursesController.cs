@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AcademicSystem.Domain.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AcademicSystem.Api.Controllers
 {
@@ -14,6 +15,20 @@ namespace AcademicSystem.Api.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetAllCourses()
+        {
+
+
+            return Ok();
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetByIdCourse()
+        {
+
+
+            return Ok();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateCourse([FromBody]Course createCourse)
         {
 
 
