@@ -9,6 +9,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAutoMapper(typeof(Program));
+
 var cs = builder.Configuration.GetConnectionString("Default");
 builder.Services.AddDbContext<DataContext>(options =>
 {
