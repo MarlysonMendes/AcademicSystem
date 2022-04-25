@@ -1,4 +1,6 @@
 using AcademicSystem.Dal;
+using AcademicSystem.Dal.Repositories;
+using AcademicSystem.Domain.Abstractions.Repositories;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddAutoMapper(typeof(Program));
-
+builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 var cs = builder.Configuration.GetConnectionString("Default");
 builder.Services.AddDbContext<DataContext>(options =>
 {
