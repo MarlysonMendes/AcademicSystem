@@ -1,0 +1,12 @@
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\bin\Debug\net6.0\AcademicSystem.Domain.deps.json
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\bin\Debug\net6.0\AcademicSystem.Domain.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\bin\Debug\net6.0\ref\AcademicSystem.Domain.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\bin\Debug\net6.0\AcademicSystem.Domain.pdb
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\obj\Debug\net6.0\AcademicSystem.Domain.csproj.AssemblyReference.cache
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\obj\Debug\net6.0\AcademicSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\obj\Debug\net6.0\AcademicSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\obj\Debug\net6.0\AcademicSystem.Domain.AssemblyInfo.cs
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\obj\Debug\net6.0\AcademicSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\obj\Debug\net6.0\AcademicSystem.Domain.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\obj\Debug\net6.0\ref\AcademicSystem.Domain.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Domain\obj\Debug\net6.0\AcademicSystem.Domain.pdb

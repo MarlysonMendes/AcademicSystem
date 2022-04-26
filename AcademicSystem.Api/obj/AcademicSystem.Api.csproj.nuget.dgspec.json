@@ -226,7 +226,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\marly\\Desktop\\Projetos .NET\\AcademicSystem\\AcademicSystem.Domain\\AcademicSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\marly\\Desktop\\Projetos .NET\\AcademicSystem\\AcademicSystem.Domain\\AcademicSystem.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -239,6 +243,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.4, )"

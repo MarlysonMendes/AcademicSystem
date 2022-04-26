@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcademicSystem.Domain.Models
+namespace AcademicSystem.Domain.Models.ProfileInfo
 {
     public class Teacher
     {

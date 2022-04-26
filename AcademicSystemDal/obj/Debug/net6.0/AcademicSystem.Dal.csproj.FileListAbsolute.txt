@@ -1,0 +1,17 @@
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\bin\Debug\net6.0\AcademicSystem.Dal.deps.json
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\bin\Debug\net6.0\AcademicSystem.Dal.runtimeconfig.json
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\bin\Debug\net6.0\AcademicSystem.Dal.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\bin\Debug\net6.0\ref\AcademicSystem.Dal.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\bin\Debug\net6.0\AcademicSystem.Dal.pdb
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\bin\Debug\net6.0\AcademicSystem.Domain.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\bin\Debug\net6.0\AcademicSystem.Domain.pdb
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\obj\Debug\net6.0\AcademicSystem.Dal.csproj.AssemblyReference.cache
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\obj\Debug\net6.0\AcademicSystem.Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\obj\Debug\net6.0\AcademicSystem.Dal.AssemblyInfoInputs.cache
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\obj\Debug\net6.0\AcademicSystem.Dal.AssemblyInfo.cs
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\obj\Debug\net6.0\AcademicSystem.Dal.csproj.CoreCompileInputs.cache
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\obj\Debug\net6.0\AcademicSystem.Dal.csproj.CopyComplete
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\obj\Debug\net6.0\AcademicSystem.Dal.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\obj\Debug\net6.0\ref\AcademicSystem.Dal.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\obj\Debug\net6.0\AcademicSystem.Dal.pdb
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystemDal\obj\Debug\net6.0\AcademicSystem.Dal.genruntimeconfig.cache
