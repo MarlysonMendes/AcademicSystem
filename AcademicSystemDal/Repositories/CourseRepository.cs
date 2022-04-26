@@ -34,6 +34,7 @@ namespace AcademicSystem.Dal.Repositories
         }
         public async Task<Course> CreateCourseAsync(Course course)
         {
+            course.CourseId =  Guid.NewGuid();
             await _ctx.Courses.AddAsync(course);
             _ctx.SaveChanges();
             return course;
