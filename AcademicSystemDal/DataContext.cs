@@ -29,6 +29,7 @@ namespace AcademicSystem.Dal
             .WithOne(cord => cord.CoordinatorCourse)
             .HasForeignKey<Coordinator>(c => c.TeacherId);
 
+
             builder.Entity<Discipline>()
             .HasMany(d => d.Students)
             .WithMany(s => s.Diciplinas)

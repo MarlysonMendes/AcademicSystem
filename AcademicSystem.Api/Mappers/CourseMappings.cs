@@ -9,6 +9,10 @@ namespace AcademicSystem.Api.Mappers
         public CourseMappings()
         {
             CreateMap<Course,CourseGetDto>();
+            CreateMap<CourseGetDto,Course>();
+
+            CreateMap<Course,CourseCreateUpdateDto>();
+            CreateMap<CourseCreateUpdateDto, Course>();
         }
     }
 }
