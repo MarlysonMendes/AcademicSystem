@@ -204,7 +204,8 @@ namespace AcademicSystem.Dal.Migrations
                     registration = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BasicInfoId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserProfileId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CourseId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    CourseId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CourseName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -236,8 +237,7 @@ namespace AcademicSystem.Dal.Migrations
                     TeacherId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     BasicInfoId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserProfileId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CourseId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CourseId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -254,16 +254,36 @@ namespace AcademicSystem.Dal.Migrations
                         principalTable: "Courses",
                         principalColumn: "CourseId");
                     table.ForeignKey(
-                        name: "FK_Teachers_Courses_TeacherId",
-                        column: x => x.TeacherId,
-                        principalTable: "Courses",
-                        principalColumn: "CourseId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_Teachers_UserProfile_UserProfileId",
                         column: x => x.UserProfileId,
                         principalTable: "UserProfile",
                         principalColumn: "UserProfileId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Coordinator",
+                columns: table => new
+                {
+                    CoordinatorId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TeacherId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CourseId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    NameCourse = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Coordinator", x => x.CoordinatorId);
+                    table.ForeignKey(
+                        name: "FK_Coordinator_Courses_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Courses",
+                        principalColumn: "CourseId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Coordinator_Teachers_TeacherId",
+                        column: x => x.TeacherId,
+                        principalTable: "Teachers",
+                        principalColumn: "TeacherId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -275,6 +295,7 @@ namespace AcademicSystem.Dal.Migrations
                     DisciplineName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DisciplineDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CourseId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CourseName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TeacherId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
@@ -314,7 +335,7 @@ namespace AcademicSystem.Dal.Migrations
                         column: x => x.StudentsStudentId,
                         principalTable: "Students",
                         principalColumn: "StudentId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
@@ -355,6 +376,17 @@ namespace AcademicSystem.Dal.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Coordinator_CourseId",
+                table: "Coordinator",
+                column: "CourseId",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Coordinator_TeacherId",
+                table: "Coordinator",
+                column: "TeacherId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Disciplines_CourseId",
@@ -418,6 +450,9 @@ namespace AcademicSystem.Dal.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Coordinator");
 
             migrationBuilder.DropTable(
                 name: "DisciplineStudents");

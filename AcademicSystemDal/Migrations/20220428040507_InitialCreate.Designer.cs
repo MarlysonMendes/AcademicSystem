@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcademicSystem.Dal.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220426040053_InitialCreate")]
+    [Migration("20220428040507_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -51,6 +51,10 @@ namespace AcademicSystem.Dal.Migrations
 
                     b.Property<Guid>("CourseId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CourseName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DisciplineDescription")
                         .IsRequired()
@@ -106,6 +110,32 @@ namespace AcademicSystem.Dal.Migrations
                     b.ToTable("BasicInfo");
                 });
 
+            modelBuilder.Entity("AcademicSystem.Domain.Models.ProfileInfo.Coordinator", b =>
+                {
+                    b.Property<Guid>("CoordinatorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CourseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("NameCourse")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("TeacherId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("CoordinatorId");
+
+                    b.HasIndex("CourseId")
+                        .IsUnique();
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("Coordinator");
+                });
+
             modelBuilder.Entity("AcademicSystem.Domain.Models.ProfileInfo.Student", b =>
                 {
                     b.Property<Guid>("StudentId")
@@ -117,6 +147,10 @@ namespace AcademicSystem.Dal.Migrations
 
                     b.Property<Guid>("CourseId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CourseName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("UserProfileId")
                         .HasColumnType("uniqueidentifier");
@@ -139,6 +173,7 @@ namespace AcademicSystem.Dal.Migrations
             modelBuilder.Entity("AcademicSystem.Domain.Models.ProfileInfo.Teacher", b =>
                 {
                     b.Property<Guid>("TeacherId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("BasicInfoId")
@@ -146,10 +181,6 @@ namespace AcademicSystem.Dal.Migrations
 
                     b.Property<Guid?>("CourseId")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("UserProfileId")
                         .HasColumnType("uniqueidentifier");
@@ -163,8 +194,6 @@ namespace AcademicSystem.Dal.Migrations
                     b.HasIndex("UserProfileId");
 
                     b.ToTable("Teachers");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Teacher");
                 });
 
             modelBuilder.Entity("AcademicSystem.Domain.Models.ProfileInfo.UserProfile", b =>
@@ -395,16 +424,9 @@ namespace AcademicSystem.Dal.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("AcademicSystem.Domain.Models.ProfileInfo.Coordinator", b =>
-                {
-                    b.HasBaseType("AcademicSystem.Domain.Models.ProfileInfo.Teacher");
-
-                    b.HasDiscriminator().HasValue("Coordinator");
-                });
-
             modelBuilder.Entity("AcademicSystem.Domain.Models.Discipline", b =>
                 {
-                    b.HasOne("AcademicSystem.Domain.Models.Course", "Course")
+                    b.HasOne("AcademicSystem.Domain.Models.Course", null)
                         .WithMany("Disciplines")
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -413,8 +435,23 @@ namespace AcademicSystem.Dal.Migrations
                     b.HasOne("AcademicSystem.Domain.Models.ProfileInfo.Teacher", null)
                         .WithMany("Diciplinas")
                         .HasForeignKey("TeacherId");
+                });
 
-                    b.Navigation("Course");
+            modelBuilder.Entity("AcademicSystem.Domain.Models.ProfileInfo.Coordinator", b =>
+                {
+                    b.HasOne("AcademicSystem.Domain.Models.Course", null)
+                        .WithOne("Coordinator")
+                        .HasForeignKey("AcademicSystem.Domain.Models.ProfileInfo.Coordinator", "CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AcademicSystem.Domain.Models.ProfileInfo.Teacher", "Teacher")
+                        .WithMany()
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Teacher");
                 });
 
             modelBuilder.Entity("AcademicSystem.Domain.Models.ProfileInfo.Student", b =>
@@ -425,7 +462,7 @@ namespace AcademicSystem.Dal.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AcademicSystem.Domain.Models.Course", "Course")
+                    b.HasOne("AcademicSystem.Domain.Models.Course", null)
                         .WithMany("Students")
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -438,8 +475,6 @@ namespace AcademicSystem.Dal.Migrations
                         .IsRequired();
 
                     b.Navigation("BasicInfo");
-
-                    b.Navigation("Course");
 
                     b.Navigation("UserProfile");
                 });
@@ -478,7 +513,7 @@ namespace AcademicSystem.Dal.Migrations
                     b.HasOne("AcademicSystem.Domain.Models.ProfileInfo.Student", null)
                         .WithMany()
                         .HasForeignKey("StudentsStudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
@@ -531,17 +566,6 @@ namespace AcademicSystem.Dal.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("AcademicSystem.Domain.Models.ProfileInfo.Coordinator", b =>
-                {
-                    b.HasOne("AcademicSystem.Domain.Models.Course", "CoordinatorCourse")
-                        .WithOne("Coordinator")
-                        .HasForeignKey("AcademicSystem.Domain.Models.ProfileInfo.Coordinator", "TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CoordinatorCourse");
                 });
 
             modelBuilder.Entity("AcademicSystem.Domain.Models.Course", b =>

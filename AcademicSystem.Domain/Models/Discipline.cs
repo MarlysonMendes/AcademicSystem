@@ -13,6 +13,7 @@ namespace AcademicSystem.Domain.Models
         public string DisciplineName { get; set;}
         public string DisciplineDescription { get; set;}
         public List<Student> Students { get; set; }
-        public Course Course { get; set; }
+        public Guid CourseId { get; set; }
+        public string CourseName { get; set; }
     }
 }

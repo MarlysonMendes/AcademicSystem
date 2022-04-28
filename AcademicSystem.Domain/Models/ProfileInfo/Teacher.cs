@@ -10,7 +10,9 @@ namespace AcademicSystem.Domain.Models.ProfileInfo
     {
         public Guid TeacherId { get; set; }
         public BasicInfo BasicInfo { get; set; }
+        public Guid BasicInfoId { get; set; }
         public UserProfile UserProfile { get; set; }
+        public Guid UserProfileId { get; set; }
         public List<Discipline> Diciplinas { get; set; } 
     }
 }

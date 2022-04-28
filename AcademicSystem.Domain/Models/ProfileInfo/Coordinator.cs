@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace AcademicSystem.Domain.Models.ProfileInfo
 {
-    public class Coordinator : Teacher
+    public class Coordinator 
     {
-        public Course CoordinatorCourse { get; set; }
+        public Guid TeacherId { get; set; }
+        public Teacher Teacher { get; set; }
+        public Guid CoordinatorId { get; set; }
+        public Guid CourseId { get; set; }
+        public string NameCourse { get; set; }
     }
 }

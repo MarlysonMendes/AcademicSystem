@@ -11,9 +11,12 @@ namespace AcademicSystem.Domain.Models.ProfileInfo
         public Guid StudentId { get; set; }
         public string registration { get; set; }
         public BasicInfo BasicInfo { get; set; }
+        public Guid BasicInfoId { get; set; }
         public UserProfile UserProfile { get; set; }
+        public Guid UserProfileId { get; set; }
         public List<Discipline> Diciplinas { get; set; }
-        public Course Course { get; set; }
+        public Guid CourseId { get; set; }
+        public string CourseName { get; set; }
 
 
     }
