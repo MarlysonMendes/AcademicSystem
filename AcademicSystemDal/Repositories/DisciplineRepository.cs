@@ -22,7 +22,9 @@ namespace AcademicSystem.Dal.Repositories
             var course = await _ctx.Courses
                 .Include(c=> c.Disciplines)
                 .FirstOrDefaultAsync(c=>c.CourseId == courseId);
-
+            
+            discipline.CourseName = course.NameCourse;
+            
             course.Disciplines.Add(discipline);
             await _ctx.SaveChangesAsync();
             return discipline;
@@ -55,8 +57,13 @@ namespace AcademicSystem.Dal.Repositories
             return discipline;
         }
 
-        public async Task<Discipline> UpdateDisciplinesOfCourseAsync( Discipline updateDiscipline)
+        public async Task<Discipline> UpdateDisciplinesOfCourseAsync(Guid courseId, Discipline updateDiscipline)
         {
+            var course = await _ctx.Courses
+                .FirstOrDefaultAsync(c => c.CourseId == courseId);
+
+            updateDiscipline.CourseName = course.NameCourse;   
+            updateDiscipline.CourseId = courseId;
             _ctx.Disciplines.Update(updateDiscipline);
             await _ctx.SaveChangesAsync();
             return updateDiscipline;

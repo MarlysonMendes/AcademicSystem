@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AcademicSystem.Api.Dto
+namespace AcademicSystem.Api.Dtos.CourseDtos
 {
-    public record CourseCreateUpdateDto
+    public record CoursePostPutDto
     {
         [Required]
         public string NameCourse { get; set; }

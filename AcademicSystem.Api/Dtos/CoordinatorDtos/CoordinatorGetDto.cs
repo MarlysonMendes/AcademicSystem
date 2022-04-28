@@ -1,4 +1,4 @@
-﻿namespace AcademicSystem.Api.Dto
+﻿namespace AcademicSystem.Api.Dtos.CoordinatorDtos
 {
     public record CoordinatorGetDto
     {

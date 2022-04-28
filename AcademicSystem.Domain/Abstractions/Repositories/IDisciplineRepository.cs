@@ -12,7 +12,7 @@ namespace AcademicSystem.Domain.Abstractions.Repositories
         Task<List<Discipline>> GetAllDisciplinesOfCourseAsync(Guid courseId);
         Task<Discipline> GetByIdDisciplinesOfCourseAsync(Guid courseId,Guid disciplineId);
         Task<Discipline> CreateDisciplinesOfCourseAsync(Guid courseId, Discipline discipline);
-        Task<Discipline> UpdateDisciplinesOfCourseAsync(Discipline updateDiscipline);
+        Task<Discipline> UpdateDisciplinesOfCourseAsync(Guid courseId,Discipline updateDiscipline);
         Task<Discipline> DeleteDisciplinesOfCourseAsync(Guid courseId, Guid disciplineId);
     }
 }

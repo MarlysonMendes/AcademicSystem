@@ -1,7 +1,7 @@
-﻿using AcademicSystem.Domain.Models;
-using AcademicSystem.Domain.Models.ProfileInfo;
+﻿using AcademicSystem.Api.Dtos.CoordinatorDtos;
+using AcademicSystem.Domain.Models;
 
-namespace AcademicSystem.Api.Dto
+namespace AcademicSystem.Api.Dtos.CourseDtos
 {
     public record CourseGetDto
     {

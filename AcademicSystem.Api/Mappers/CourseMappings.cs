@@ -1,4 +1,4 @@
-﻿using AcademicSystem.Api.Dto;
+﻿using AcademicSystem.Api.Dtos.CourseDtos;
 using AcademicSystem.Domain.Models;
 using AutoMapper;
 
@@ -11,8 +11,8 @@ namespace AcademicSystem.Api.Mappers
             CreateMap<Course,CourseGetDto>();
             CreateMap<CourseGetDto,Course>();
 
-            CreateMap<Course,CourseCreateUpdateDto>();
-            CreateMap<CourseCreateUpdateDto, Course>();
+            CreateMap<Course,CoursePostPutDto>();
+            CreateMap<CoursePostPutDto, Course>();
         }
     }
 }
