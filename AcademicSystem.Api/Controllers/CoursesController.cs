@@ -103,5 +103,7 @@ namespace AcademicSystem.Api.Controllers
             return NoContent();
         }
 
+        // endpoint courses/coordinator
+
     }
 }

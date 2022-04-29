@@ -20,6 +20,7 @@ namespace AcademicSystem.Dal
         public DbSet<Discipline> Disciplines { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<Coordinator> Coodinatores { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
