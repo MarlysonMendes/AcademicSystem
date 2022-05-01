@@ -15,7 +15,6 @@ namespace AcademicSystem.Domain.Aggregates.ProfileInfo
         public string IdentityId { get; private set; }
 
 
-        public Guid CourseId { get; private set; }
         public Course Course { get; private set; }
 
 

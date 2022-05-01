@@ -21,7 +21,7 @@ namespace AcademicSystem.Domain.Aggregates
        
         
         public Coordinator Coordinator { get;private set; }
-
+        public Guid CoordinatorId { get; private set; }
 
         public IEnumerable<Discipline> Diciplinas { get { return _disciplines; } }
 
