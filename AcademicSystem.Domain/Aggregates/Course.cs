@@ -9,12 +9,24 @@ namespace AcademicSystem.Domain.Aggregates
 {
     public class Course
     {
-        public Guid CourseId { get; set; }
-        public string NameCourse { get; set; }
-        public List<Discipline> Disciplines { get; set; }
-        public List<Student> Students { get; set; }
-        public List<Teacher> Teachers { get; set; }
-        public Coordinator Coordinator { get; set; }
-        public string Department { get; set; }
+        private readonly List<Discipline> _disciplines = new List<Discipline>();
+
+        private Course () { }
+        
+        public Guid CourseId { get; private set; }
+        public string NameCourse { get; private set; }
+ 
+        public List<Student> Students { get; private set; }
+        public List<Teacher> Teachers { get; private set; }
+       
+        
+        public Coordinator Coordinator { get;private set; }
+
+
+        public IEnumerable<Discipline> Diciplinas { get { return _disciplines; } }
+
+
+        public Departament Departament { get;private set; }
+        public Guid DepartamentId { get; private set; }
     }
 }

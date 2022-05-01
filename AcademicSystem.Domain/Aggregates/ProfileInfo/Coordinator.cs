@@ -8,13 +8,16 @@ namespace AcademicSystem.Domain.Aggregates.ProfileInfo
 {
     public class Coordinator 
     {
+        private Coordinator () { }
 
-        public Guid CoordinatorId { get; set; }
-        public BasicInfo BasicInfo { get; set; }
+        public Guid CoordinatorId { get; private set; }
+        public BasicInfo BasicInfo { get; private set; }
         public string IdentityId { get; private set; }
 
 
-        public Guid CourseId { get; set; }
-        public string CourseName { get; private set; }
+        public Guid CourseId { get; private set; }
+        public Course Course { get; private set; }
+
+
     }
 }
