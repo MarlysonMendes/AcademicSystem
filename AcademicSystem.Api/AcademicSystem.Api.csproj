@@ -19,12 +19,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AcademicSystem.Domain\AcademicSystem.Domain.csproj" />
-    <ProjectReference Include="..\AcademicSystem.Services\AcademicSystem.Services.csproj" />
-    <ProjectReference Include="..\AcademicSystemDal\AcademicSystem.Dal.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\TeacherDtos\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Mappers\" />
   </ItemGroup>
 
 </Project>
