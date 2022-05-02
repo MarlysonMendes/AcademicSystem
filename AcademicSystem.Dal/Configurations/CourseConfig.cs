@@ -9,7 +9,9 @@ namespace AcademicSystem.Dal.Configurations
     {
         public void Configure(EntityTypeBuilder<Course> builder)
         {
-            throw new NotImplementedException();
+            builder.HasOne(c=>c.Departament)
+                .WithMany(d=>d.Courses)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

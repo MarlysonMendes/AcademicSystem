@@ -14,7 +14,6 @@ namespace AcademicSystem.Dal.Configurations
         public void Configure(EntityTypeBuilder<Departament> builder)
         {
 
-            throw new NotImplementedException();
         }
     }
 }

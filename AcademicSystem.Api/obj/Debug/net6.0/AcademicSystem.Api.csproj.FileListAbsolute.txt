@@ -15,7 +15,6 @@ C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\obj\Debug
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\obj\Debug\net6.0\AcademicSystem.Api.AssemblyInfoInputs.cache
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\obj\Debug\net6.0\AcademicSystem.Api.AssemblyInfo.cs
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\obj\Debug\net6.0\AcademicSystem.Api.csproj.CoreCompileInputs.cache
-C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\obj\Debug\net6.0\AcademicSystem.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\obj\Debug\net6.0\AcademicSystem.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\obj\Debug\net6.0\staticwebassets.development.json
@@ -68,7 +67,7 @@ C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Dal.dll
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Domain.dll
-C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Services.dll
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Domain.pdb
-C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Services.pdb
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Dal.pdb
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Application.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Application.pdb

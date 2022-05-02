@@ -10,6 +10,10 @@ namespace AcademicSystem.Dal.Configurations
         public void Configure(EntityTypeBuilder<Teacher> builder)
         {
             builder.OwnsOne(t => t.BasicInfo);
+
+            builder.HasOne(t =>t.Departament)
+                .WithMany(d=>d.Teachers)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

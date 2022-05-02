@@ -16,7 +16,7 @@ namespace AcademicSystem.Domain.Aggregates.ProfileInfo
         public BasicInfo BasicInfo { get; set; }
         public string IdentityId { get; private set; }
 
-        public Departament Departament { get; private set }
+        public Departament Departament { get; private set; }
         public Guid DepartamentoId { get; private set; }
 
 
