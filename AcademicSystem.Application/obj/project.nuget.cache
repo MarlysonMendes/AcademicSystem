@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "XyiXLX49yj5aXBQ4gpGfwqNrI3XNGy7uTL18XZfXzbe3OyGQo8YMc+oGvxcvrKSuRVaVYpuFkC6v8tDtOoBdSg==",
+  "dgSpecHash": "wFH+M93F+8gjBwWHC2ZUdRUyqBjAvzQMx0QPgKv8BDuwMkh+m4lh54zyeUzos/AXNnWsznXkSh5cxT8skbW7bg==",
   "success": true,
   "projectFilePath": "C:\\Users\\marly\\Desktop\\Projetos .NET\\AcademicSystem\\AcademicSystem.Application\\AcademicSystem.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\marly\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\marly\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\marly\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\marly\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

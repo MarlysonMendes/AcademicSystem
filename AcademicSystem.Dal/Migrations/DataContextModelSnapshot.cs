@@ -98,10 +98,6 @@ namespace AcademicSystem.Dal.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("IdentityId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("CoordinatorId");
 
                     b.ToTable("Coordinator");
@@ -115,10 +111,6 @@ namespace AcademicSystem.Dal.Migrations
 
                     b.Property<Guid>("CourseId")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("IdentityId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("StudentId");
 
@@ -141,10 +133,6 @@ namespace AcademicSystem.Dal.Migrations
 
                     b.Property<Guid>("DepartamentoId")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("IdentityId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("TeacherId");
 

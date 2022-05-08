@@ -28,5 +28,20 @@ namespace AcademicSystem.Domain.Aggregates
 
         public Departament Departament { get;private set; }
         public Guid DepartamentId { get; private set; }
+        
+        static Course CreateCourse(Guid courseId, string courseName)
+        {
+            return new Course 
+            {
+                CourseId = courseId,
+                NameCourse = courseName
+            };
+        }
+
+        public void UpdateCourse(string nameCourse)
+        {
+            NameCourse = nameCourse;
+        }
+    
     }
 }

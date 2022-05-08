@@ -8,7 +8,11 @@ namespace AcademicSystem.Dal
 {
     public class DataContext : IdentityDbContext
     {
-        public DataContext(DbContextOptions options) : base(options)
+        public DataContext()
+        {
+
+        }
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
 
         }

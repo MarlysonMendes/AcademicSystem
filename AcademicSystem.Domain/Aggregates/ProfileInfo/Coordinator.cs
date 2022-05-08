@@ -12,7 +12,6 @@ namespace AcademicSystem.Domain.Aggregates.ProfileInfo
 
         public Guid CoordinatorId { get; private set; }
         public BasicInfo BasicInfo { get; private set; }
-        public string IdentityId { get; private set; }
 
 
         public Course Course { get; private set; }

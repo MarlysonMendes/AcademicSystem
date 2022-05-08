@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "lqPIKZIFbBFEIrzEYF9X7G1WoobSCQzkAPO/cnx/HmGGeEm5eywikUzeWFnCdfYe0gHLlotw7mYnpio2iHhsfA==",
+  "dgSpecHash": "IjMNYAJliKRkgVE0eDI0wkZItdobMbrHX9Ya8l/OCVRND8rZup1vSZ6vJWUfwDzf5Nv8pO0gwx8VH6Pny+00yg==",
   "success": true,
   "projectFilePath": "C:\\Users\\marly\\Desktop\\Projetos .NET\\AcademicSystem\\AcademicSystem.Api\\AcademicSystem.Api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\marly\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\marly\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\marly\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\marly\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\marly\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\marly\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\marly\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\marly\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\marly\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\marly\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

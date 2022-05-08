@@ -14,12 +14,25 @@ namespace AcademicSystem.Domain.Aggregates.ProfileInfo
 
         public Guid TeacherId { get; set; }
         public BasicInfo BasicInfo { get; set; }
-        public string IdentityId { get; private set; }
 
         public Departament Departament { get; private set; }
         public Guid DepartamentoId { get; private set; }
 
 
         public IEnumerable<Discipline> Diciplinas { get { return _disciplines; } }
+        
+        static Teacher CreateTeacher(BasicInfo newInfo,Guid guidTeacher)
+        {
+            return new Teacher
+            {
+                BasicInfo = newInfo,
+                TeacherId = guidTeacher,
+            };
+        }
+
+        public void UpdateTeacher(BasicInfo newInfo)
+        {
+            BasicInfo = newInfo;
+        }
     }
 }

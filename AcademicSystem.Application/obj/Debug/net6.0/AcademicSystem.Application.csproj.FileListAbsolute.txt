@@ -10,3 +10,6 @@ C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Application\o
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Application\obj\Debug\net6.0\AcademicSystem.Application.dll
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Application\obj\Debug\net6.0\ref\AcademicSystem.Application.dll
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Application\obj\Debug\net6.0\AcademicSystem.Application.pdb
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Application\bin\Debug\net6.0\AcademicSystem.Domain.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Application\bin\Debug\net6.0\AcademicSystem.Domain.pdb
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Application\obj\Debug\net6.0\AcademicSystem.Application.csproj.CopyComplete

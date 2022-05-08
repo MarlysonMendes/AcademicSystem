@@ -1,11 +1,13 @@
 ﻿namespace AcademicSystem.Api
 {
-    //endpoint
-    // cursos
-    // cursos/alunos
-    // cursos/profesores
-    // cursos/disciplinas
+
     public class ApiRoutes
     {
+        public static class DepartamentsRoute
+        {
+            public const string BaseRoute = "api/[controller]";
+            public const string idRoute = "{DepartamentId}";
+        }
+
     }
 }

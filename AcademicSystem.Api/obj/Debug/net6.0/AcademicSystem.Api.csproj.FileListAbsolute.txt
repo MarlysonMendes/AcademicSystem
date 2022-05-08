@@ -71,3 +71,7 @@ C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Dal.pdb
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Application.dll
 C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\AcademicSystem.Application.pdb
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\obj\Debug\net6.0\AcademicSystem.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\MediatR.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\marly\Desktop\Projetos .NET\AcademicSystem\AcademicSystem.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
